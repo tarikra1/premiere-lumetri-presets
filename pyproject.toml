@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "premiere-lumetri-presets"
+version = "1.0.0"
+description = "Programmatic Lumetri Color look catalog and voice-aware audio ducking ExtendScript (.jsx) generator for Adobe Premiere Pro."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+authors = [
+  { name = "Tarik", email = "tarikra1@users.noreply.github.com" }
+]
+keywords = ["premiere-pro", "lumetri", "color-grading", "extendscript", "audio-ducking", "video-automation"]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/tarikra1/premiere-lumetri-presets"
+Repository = "https://github.com/tarikra1/premiere-lumetri-presets"
+Changelog = "https://github.com/tarikra1/premiere-lumetri-presets/blob/main/CHANGELOG.md"
+Issues = "https://github.com/tarikra1/premiere-lumetri-presets/issues"
+
+[project.scripts]
+lumetri-gen = "premiere_lumetri_presets.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
